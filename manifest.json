@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Watify",
+  "description": "Watify le web",
+  "version": "1.0",
+  "homepage_url": "https://github.com/AlexisAbalea/watib",
+  "icons": {
+      "64": "static/wati.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "js/replace.js"
+      ]
+    }
+  ],"browser_action": {
+      "default_icon": {
+      "64": "static/wati.png"
+    },
+      "default_popup": "index.html"
+  }
+}
